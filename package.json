@@ -9,7 +9,9 @@
     "start": "react-native start"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.11",
     "@react-native-community/masked-view": "^0.1.11",
+    "@react-native-masked-view/masked-view": "0.2.5",
     "@react-navigation/native-stack": "^6.2.5",
     "expo": "~43.0.2",
     "expo-splash-screen": "~0.13.5",
@@ -24,8 +26,7 @@
     "react-native-screens": "~3.8.0",
     "react-native-web": "0.17.1",
     "react-navigation-stack": "^2.10.4",
-    "react-router-dom": "^6.0.2",
-    "@react-native-masked-view/masked-view": "0.2.5"
+    "react-router-dom": "^6.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
