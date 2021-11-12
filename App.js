@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SafeAreaView, StyleSheet, Button, FlatList, View, Text, Image, Pressable, TextInput, ScrollView, Alert } from 'react-native';
+import { SafeAreaView, StyleSheet, FlatList, View, Text, Image, Pressable, TextInput, ScrollView, Alert } from 'react-native';
 import { useState, useEffect } from "react";
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';

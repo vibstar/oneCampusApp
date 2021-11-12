@@ -8,8 +8,15 @@ we have to use in our daily lives, inlcuding but not limited to: Get, BiteU, Bra
 to have the functionalities of all the aformentioned services and then some, all in just one app. This isn't exactly a necessity but it
 will be a good quality of life change for the thousands of students on the Brandeis campus. 
 
-![Home Screen Screenshot](./images/HomeScreen.PNG?raw=true |width = 100 "Home Screen Screenshot")
+![Home Screen Screenshot](./images/HomeScreen.PNG?raw=true "Home Screen Screenshot")
 
-screen shots
+![Food Menu Screenshot](./images/FoodMenu.PNG?raw=true "Food Menu Screenshot")
 
-developer notes (e.g. what technologies you are using, what packages your using, etc.)
+![Passport Login Screenshot](./images/HomeScreen.PNG?raw=true "Passport login Screenshot")
+
+
+I am using Stack Navigation to move from page to page. I use a Flat list to show the food menu. I use AsynchStorage for the login page
+and storing the username. I also use the ScrollView tag for making the main menu scrollable on the home page and that adds funcitonality
+for the future to add more navigabable pages from there.
+
+
