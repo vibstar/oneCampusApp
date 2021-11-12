@@ -8,7 +8,8 @@ we have to use in our daily lives, inlcuding but not limited to: Get, BiteU, Bra
 to have the functionalities of all the aformentioned services and then some, all in just one app. This isn't exactly a necessity but it
 will be a good quality of life change for the thousands of students on the Brandeis campus. 
 
-![Alt text](./images/HomeScreen.PNG?raw=true "Home Screen Screenshot"{width=50})
+![Home Screen Screenshot](./images/HomeScreen.PNG?raw=true |width = 100 "Home Screen Screenshot")
+
 screen shots
 
 developer notes (e.g. what technologies you are using, what packages your using, etc.)
