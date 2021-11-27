@@ -56,6 +56,16 @@ const MENU = [
   }
 ]
 
+const Item = ({ title }) => (
+  <View style={styles.item}>
+    <Text style={styles.regularFont}>{title}</Text>
+  </View>
+);
+
+const renderItem = ({ item }) => (
+  <Item title={item.title} />
+);
+
 function HomeScreen({ navigation }) {
   return (
 
@@ -80,23 +90,19 @@ function HomeScreen({ navigation }) {
             <Text>Go to COVID-19 Campus Passport</Text>
           </Pressable>
         </View>
+        <Text style={(styles.regularFont)}>You can track the brandeis waltham shuttle</Text>
+        <View style={(styles.navigationButtonStyle)}>
+          <Pressable style={styles.navigationButtonStyle} onPress={() => navigation.navigate('Shuttle Tracker')}>
+            <Text>Go to shuttle tracker</Text>
+          </Pressable>
+        </View>
       </ScrollView>
     </View>
   );
 }
 
-const Item = ({ title }) => (
-  <View style={styles.item}>
-    <Text style={styles.regularFont}>{title}</Text>
-  </View>
-);
-
-const renderItem = ({ item }) => (
-  <Item title={item.title} />
-);
 
 function MenuScreen({ navigation }) {
-
   return (
     <SafeAreaView style={styles.container}>
       <FlatList
@@ -148,8 +154,8 @@ function CovidLoginScreen({ navigation }) {
     if (userID.length > 0 && password.length > 0) {
       navigation.navigate('Covid Passport')
     }
-
   }
+
   return (
     <View style={{ flex: 1, flexDirection: 'vertical', alignItems: 'center', justifyContent: 'center' }}>
       <View style={{ flexDirection: 'row' }}>
@@ -171,8 +177,6 @@ function CovidLoginScreen({ navigation }) {
           <Text>login</Text>
         </Pressable>
       </View>
-      
-
     </View>
   );
 }
@@ -213,6 +217,15 @@ function CovidPassportScreen({ navigation }) {
   );
 }
 
+function ShuttleTrackerScreen({ navigation }){
+  return (
+    <View>
+      <Text>This is where the map for the shuttle tracker will go</Text>
+      <Text>If I can't figure that out, I will try to just put a google maps map</Text>
+    </View>
+  );
+}
+
 const Stack = createNativeStackNavigator();
 
 function MyStack() {
@@ -225,6 +238,7 @@ function MyStack() {
       <Stack.Screen name="Menu" component={MenuScreen} />
       <Stack.Screen name="Covid Login" component={CovidLoginScreen} />
       <Stack.Screen name="Covid Passport" component={CovidPassportScreen} />
+      <Stack.Screen name="Shuttle Tracker" component={ShuttleTrackerScreen} />
     </Stack.Navigator>
   );
 }
