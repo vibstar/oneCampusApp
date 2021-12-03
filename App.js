@@ -263,7 +263,7 @@ const styles = StyleSheet.create({
     padding: 2,
     marginVertical: 8,
     marginHorizontal: '20%',
-    fontSize: 14,
+    fontSize: 13,
   },
   brandeisLogo: {
     width: '100%',
