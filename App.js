@@ -70,7 +70,7 @@ function HomeScreen({ navigation }) {
   return (
 
     <View style={(styles.homePage)}>
-      <Image style={(styles.brandeisLogo)} source={require("./Brandeis_University_seal.svg.png")} />
+      <Image style={(styles.brandeisLogo)} source={require("./images/Brandeis_University_seal.svg.png")} />
       <ScrollView>
         <Text style={(styles.regularFont)}>Here is a short about page about the app creator</Text>
         <View style={(styles.navigationButtonStyle)}>
@@ -118,7 +118,7 @@ function AboutScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'flex-start', marginTop: '5%' }}>
       <ScrollView style={styles.scrollView}>
-        <Image style={(styles.vibhuPic)} source={require("./VibhuPicture.jpg")} />
+        <Image style={(styles.vibhuPic)} source={require("./images/VibhuPicture.jpg")} />
         <Text style={styles.mediumFont}>
           {'\t'}This app is made by Vibhu Singh. He is a junior at Brandeis University studying
           computer science and economics. He is also working towards his minor in philosophy.
